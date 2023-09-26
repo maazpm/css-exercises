@@ -20,9 +20,11 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  padding: 15px;
 }
 
-.icon {
+.exclamation-icon {
   color: royalblue;
   font-size: 26px;
   font-weight: 700;
@@ -33,6 +35,23 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+}
+
+.middle{
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+
+}
+
+.header{
+  font-weight: bold;
+  font-size: larger;
+}
+
+.text {
+  margin-top: 7px;
 }
 
 .close-button {
@@ -48,12 +67,20 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+  flex-shrink: 0;
 }
 
 button {
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
+}
+
+.bottom-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-top: 12px;
 }
 
 button.continue {
